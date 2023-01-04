@@ -1,0 +1,26 @@
+jwt:
+  secret: '[a-zA-Z0-9._]^+$ASecret372839String383636forAlphabeticalArrayNumeralsandOtherSymbo$'
+
+server:
+  port:  8081
+#  error:
+#    whitelabel:
+#      enabled: false
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tickList
+    username: root
+    password: PleaseLetMeIn2
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+#  mvc:
+#    throw-exception-if-no-handler-found: true
+#  resources:
+#    add-mapping: false
